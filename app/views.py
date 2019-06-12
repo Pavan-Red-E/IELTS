@@ -4,19 +4,19 @@ from app.models import *
 from django.http import HttpResponse
 
 def home(request):
-	return render(request, 'index.html',{})
+	return render(request, 'index.html')
 def register(request):
-	return render(request, 'Login.html',{})
+	return render(request, 'Login.html')
 def login(request):
-	return render(request, 'Reg.html',{})
+	return render(request, 'Reg.html')
 def checkscorepage(request):
-	return render(request, 'CheckScore.html',{})
+	return render(request, 'CheckScore.html')
 def analyticspage(request):
-	return render(request, 'Analytics.html',{})
+	return render(request, 'Analytics.html')
 def rulespage(request):
-	return render(request, 'Rules.html',{})
+	return render(request, 'Rules.html')
 def contactpage(request):
-	return render(request, 'Contact.html',{})
+	return render(request, 'Contact.html')
 @csrf_exempt
 def saveuser(request):
 	if request.method=="POST":
